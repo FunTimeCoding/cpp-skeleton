@@ -14,4 +14,4 @@ if [ "${FOUND}" = true ]; then
     docker rmi "${VENDOR_NAME_LOWER}/${PROJECT_NAME_DASH}"
 fi
 
-docker build --tag "${VENDOR_NAME_LOWER}/${PROJECT_NAME_DASH}" .
+docker build --target production --tag "${VENDOR_NAME_LOWER}/${PROJECT_NAME_DASH}" .
