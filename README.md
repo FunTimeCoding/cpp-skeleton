@@ -75,3 +75,39 @@ Show files the package installed:
 ```sh
 dpkg-query --listfiles cpp-skeleton
 ```
+
+
+### Docker remote environment
+
+Initial build and start:
+
+```sh
+script/docker/development/create.sh
+```
+
+Log in:
+
+```sh
+script/docker/development/ssh.sh
+```
+
+Stop and start:
+
+```sh
+script/docker/development/stop.sh
+script/docker/development/start.sh
+```
+
+Destroy:
+
+```sh
+script/docker/development/destroy.sh
+```
+
+Install a Conan dependency:
+
+```sh
+# This example takes a long time
+apk add linux-headers
+conan install Poco/1.10.1@pocoproject/stable --build=Poco
+```

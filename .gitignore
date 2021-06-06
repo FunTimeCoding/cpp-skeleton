@@ -8,3 +8,4 @@
 /documentation/man/*.1
 /.scannerwork
 /cmake-build-debug
+/.idea
